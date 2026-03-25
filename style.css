@@ -190,7 +190,7 @@ ul {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: url('http://www.theglassonion.cz/foto/uvodni.jpg') center/cover no-repeat;
+  background: url('images/uvodni.jpg') center/cover no-repeat;
   opacity: 0.15;
   filter: blur(2px);
 }
