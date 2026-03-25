@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Glass Onion — Výběr designu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0a0a0a;
+      --text: #f0f0f0;
+      --muted: #9b9b9b;
+      --accent: #d4a843;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 3rem 1.5rem;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    .header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 6vw, 3.5rem);
+      font-weight: 900;
+      margin-bottom: 0.5rem;
+    }
+    .header p {
+      color: var(--muted);
+      font-size: 1.05rem;
+      max-width: 500px;
+    }
+    .header .accent { color: var(--accent); }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      max-width: 1100px;
+      width: 100%;
+    }
+    .card {
+      background: #161616;
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 16px;
+      padding: 2rem;
+      text-decoration: none;
+      color: var(--text);
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    .card:hover {
+      border-color: var(--accent);
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.4);
+    }
+    .card-number {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      font-weight: 900;
+      opacity: 0.1;
+      position: absolute;
+      top: 1rem;
+      right: 1.5rem;
+    }
+    .card h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      margin-bottom: 0.5rem;
+    }
+    .card p {
+      color: var(--muted);
+      font-size: 0.92rem;
+      line-height: 1.6;
+    }
+    .card .tag {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.3rem 0.8rem;
+      border-radius: 50px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+    .card:nth-child(1) .tag { background: #d4a843; color: #0a0a0a; }
+    .card:nth-child(2) .tag { background: linear-gradient(135deg, #FF1493, #FFD700); color: #1a0a2e; }
+    .card:nth-child(3) .tag { background: #1a1a1a; color: #fff; }
+    .card:nth-child(4) .tag { background: #c17817; color: #f4efe6; }
+    .card:nth-child(5) .tag { background: #d32f2f; color: #fff; }
+    .footer {
+      margin-top: 3rem;
+      color: var(--muted);
+      font-size: 0.85rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>The Glass Onion</h1>
+    <p>Vyberte si design pro nové webové stránky kapely. <span class="accent">Kliknutím</span> zobrazíte náhled.</p>
+  </div>
+
+  <div class="grid">
+    <a href="v1/" class="card">
+      <span class="card-number">01</span>
+      <h2>Dark Gold</h2>
+      <p>Elegantní tmavý design se zlatými akcenty. Sofistikovaný a moderní, inspirovaný oficiálními stránkami The Beatles.</p>
+      <span class="tag">Elegant</span>
+    </a>
+    <a href="v2/" class="card">
+      <span class="card-number">02</span>
+      <h2>Psychedelic 60s</h2>
+      <p>Barevné psychedelické gradienty inspirované érou květinových dětí. Výrazné barvy, animované pozadí, groovy typografie.</p>
+      <span class="tag">Groovy</span>
+    </a>
+    <a href="v3/" class="card">
+      <span class="card-number">03</span>
+      <h2>Clean White</h2>
+      <p>Čistý světlý design ve stylu magazínu. Elegantní serifová typografie, hodně bílého prostoru, minimalistický přístup.</p>
+      <span class="tag">Editorial</span>
+    </a>
+    <a href="v4/" class="card">
+      <span class="card-number">04</span>
+      <h2>Vintage Warm</h2>
+      <p>Teplé sépiové tóny evokující vinylové desky a koncertní programy 60. let. Nostalgický a autentický.</p>
+      <span class="tag">Retro</span>
+    </a>
+    <a href="v5/" class="card">
+      <span class="card-number">05</span>
+      <h2>British Invasion</h2>
+      <p>Odvážný design inspirovaný britskou Mod kulturou. Námořnická modrá, červená a bílá. Energický a razantní.</p>
+      <span class="tag">Bold</span>
+    </a>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2026 The Glass Onion — Beatles Revival Band, Brno</p>
+  </div>
+</body>
+</html>
