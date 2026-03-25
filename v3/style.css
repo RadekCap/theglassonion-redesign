@@ -159,13 +159,22 @@ img {
   position: relative;
 }
 
-.hero-overlay {
-  display: none;
+.hero-content {
+  max-width: 800px;
+  position: relative;
 }
 
-.hero-content {
-  max-width: 720px;
+.hero-image {
+  max-width: 800px;
+  margin: 2rem auto;
   position: relative;
+}
+
+.hero-image img {
+  width: 100%;
+  display: block;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08);
+  border-bottom: 3px solid #b8860b;
 }
 
 .hero-content::before {
