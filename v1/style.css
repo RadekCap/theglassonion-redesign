@@ -187,12 +187,24 @@ ul {
     linear-gradient(180deg, var(--color-bg) 0%, #0d0d1a 50%, var(--color-bg) 100%);
 }
 
-.hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: url('../images/uvodni.jpg') center/cover no-repeat;
-  opacity: 0.15;
-  filter: blur(2px);
+.hero-image {
+  max-width: 700px;
+  margin: 0 auto 2.5rem;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 40px rgba(212, 168, 67, 0.2);
+  transition: filter var(--transition);
+}
+
+.hero-image img {
+  width: 100%;
+  display: block;
+  filter: brightness(0.9);
+  transition: filter var(--transition);
+}
+
+.hero-image:hover img {
+  filter: brightness(1);
 }
 
 .hero-content {
