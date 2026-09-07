@@ -44,7 +44,7 @@ sections.forEach(section => observerNav.observe(section));
 
 // ===== Scroll fade-in animations =====
 const fadeElements = document.querySelectorAll(
-  '.member-card, .highlight-card, .extra-card, .concert-card, .contact-card, .gallery-item'
+  '.member-card, .highlight-card, .extra-card, .concert-card, .contact-card, .gallery-item, .media-video-card, .media-audio-card'
 );
 
 fadeElements.forEach(el => el.classList.add('fade-in'));

@@ -93,11 +93,59 @@
       text-transform: uppercase;
       letter-spacing: 0.06em;
     }
-    .card:nth-child(1) .tag { background: #d4a843; color: #0a0a0a; }
-    .card:nth-child(2) .tag { background: linear-gradient(135deg, #FF1493, #FFD700); color: #1a0a2e; }
-    .card:nth-child(3) .tag { background: #1a1a1a; color: #fff; }
-    .card:nth-child(4) .tag { background: #c17817; color: #f4efe6; }
-    .card:nth-child(5) .tag { background: #d32f2f; color: #fff; }
+    .card.card-featured {
+      background: linear-gradient(135deg, #1c180e 0%, #121217 100%);
+      border: 1px solid #e5b94c;
+    }
+    .card.card-featured:hover {
+      box-shadow: 0 15px 50px rgba(229, 185, 76, 0.25);
+    }
+    .card.card-mod {
+      background: linear-gradient(135deg, #0e1526 0%, #080c17 100%);
+      border: 1px solid #c82333;
+    }
+    .card.card-mod:hover {
+      box-shadow: 0 15px 50px rgba(200, 35, 51, 0.3);
+    }
+    .card.card-editorial {
+      background: linear-gradient(135deg, #ffffff 0%, #f0f0f5 100%);
+      border: 1px solid #d0d0d8;
+      color: #111;
+    }
+    .card.card-editorial h2, .card.card-editorial p {
+      color: #111;
+    }
+    .card.card-editorial p {
+      color: #555;
+    }
+    .card.card-editorial:hover {
+      box-shadow: 0 15px 50px rgba(255, 255, 255, 0.2);
+    }
+    .featured-badge {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      color: #e5b94c;
+      margin-bottom: 0.5rem;
+    }
+    .text-crimson { color: #c82333 !important; }
+    .text-dark { color: #111 !important; }
+    .tag-gold {
+      background: #e5b94c !important;
+      color: #000 !important;
+      font-weight: 800 !important;
+    }
+    .tag-crimson {
+      background: #c82333 !important;
+      color: #fff !important;
+      font-weight: 800 !important;
+    }
+    .tag-dark {
+      background: #111 !important;
+      color: #fff !important;
+      font-weight: 800 !important;
+    }
     .footer {
       margin-top: 3rem;
       color: var(--muted);
@@ -113,35 +161,28 @@
   </div>
 
   <div class="grid">
-    <a href="v1/" class="card">
+    <a href="arena-stage.html" class="card card-featured">
       <span class="card-number">01</span>
-      <h2>Dark Gold</h2>
-      <p>Elegantní tmavý design se zlatými akcenty. Sofistikovaný a moderní, inspirovaný oficiálními stránkami The Beatles.</p>
-      <span class="tag">Elegant</span>
+      <div class="featured-badge">CONCEPT 1 &bull; ARENA STAGE</div>
+      <h2>Modern Arena Stage</h2>
+      <p>Velkoplošný koncertní design inspirovaný thebeatlesrevival.cz. Edge-to-edge fotografie, dynamické stage lighting, live soundboard přehrávač a VIP promoter booking.</p>
+      <span class="tag tag-gold">Live Arena Experience</span>
     </a>
-    <a href="v2/" class="card">
+
+    <a href="vintage-invasion.html" class="card card-mod">
       <span class="card-number">02</span>
-      <h2>Psychedelic 60s</h2>
-      <p>Barevné psychedelické gradienty inspirované érou květinových dětí. Výrazné barvy, animované pozadí, groovy typografie.</p>
-      <span class="tag">Groovy</span>
+      <div class="featured-badge text-crimson">CONCEPT 2 &bull; BRITISH INVASION</div>
+      <h2>Vintage 1960s Mod</h2>
+      <p>Autentická dobová atmosféra Cavern Clubu inspirovaná brouciband.cz. Vinylové grafiky, retro koncertní plakáty, Mod striping a dobový instrumentář.</p>
+      <span class="tag tag-crimson">1960s Mod Aesthetic</span>
     </a>
-    <a href="v3/" class="card">
+
+    <a href="editorial-press.html" class="card card-editorial">
       <span class="card-number">03</span>
-      <h2>Clean White</h2>
-      <p>Čistý světlý design ve stylu magazínu. Elegantní serifová typografie, hodně bílého prostoru, minimalistický přístup.</p>
-      <span class="tag">Editorial</span>
-    </a>
-    <a href="v4/" class="card">
-      <span class="card-number">04</span>
-      <h2>Vintage Warm</h2>
-      <p>Teplé sépiové tóny evokující vinylové desky a koncertní programy 60. let. Nostalgický a autentický.</p>
-      <span class="tag">Retro</span>
-    </a>
-    <a href="v5/" class="card">
-      <span class="card-number">05</span>
-      <h2>British Invasion</h2>
-      <p>Odvážný design inspirovaný britskou Mod kulturou. Námořnická modrá, červená a bílá. Energický a razantní.</p>
-      <span class="tag">Bold</span>
+      <div class="featured-badge text-dark">CONCEPT 3 &bull; MODERN PRESS-KIT</div>
+      <h2>Clean Editorial EPK</h2>
+      <p>Vysoce kontrastní minimalistický design ve stylu beatles-revival.cz. Čistá typografie, rychlý přehled pro pořadatele, přehledné termíny a video stage.</p>
+      <span class="tag tag-dark">EPK &amp; Press-Kit</span>
     </a>
   </div>
 
