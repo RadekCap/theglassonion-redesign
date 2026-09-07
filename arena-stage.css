@@ -283,10 +283,10 @@ img {
 .hero-backdrop {
   position: absolute;
   inset: 0;
-  background-image: url('images/uvodni.jpg');
+  background-image: url('images/IMG_4285.JPG');
   background-size: cover;
-  background-position: center 20%;
-  filter: brightness(0.48) contrast(1.2);
+  background-position: center 25%;
+  filter: brightness(0.48) contrast(1.18);
   transform: scale(1.02);
   animation: heroPulse 18s alternate infinite ease-in-out;
 }
