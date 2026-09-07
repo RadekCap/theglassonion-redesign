@@ -18,48 +18,71 @@
   <!-- Navigation -->
   <nav class="navbar" id="navbar">
     <div class="nav-container">
-      <a href="#hero" class="nav-logo">The Glass Onion</a>
+      <a href="#hero" class="nav-logo">
+        <span class="logo-accent">The</span> Glass Onion
+      </a>
       <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-menu">
         <li><a href="#about">O kapele</a></li>
-        <li><a href="#members">Členové</a></li>
+        <li><a href="#members">Sestava</a></li>
         <li><a href="#concerts">Koncerty</a></li>
         <li><a href="#repertoire">Repertoár</a></li>
-        <li><a href="#gallery">Fotky</a></li>
-        <li><a href="#contact">Kontakt</a></li>
+        <li><a href="#media">Media &amp; Video</a></li>
+        <li><a href="#gallery">Fotogalerie</a></li>
+        <li><a href="#contact" class="nav-btn">Objednat koncert</a></li>
       </ul>
     </div>
   </nav>
 
-  <!-- Hero Section -->
+  <!-- Hero Section (Full-Screen Impact) -->
   <section class="hero" id="hero">
-    <div class="hero-overlay"></div>
+    <div class="hero-bg"></div>
+    <div class="hero-overlay-gradient"></div>
     <div class="hero-content">
+      <div class="hero-badge">Beatles Revival Band &bull; Brno &bull; Od roku 1993</div>
       <h1 class="hero-title">The Glass Onion</h1>
-      <p class="hero-subtitle">Beatles Revival Band</p>
-      <p class="hero-tagline">Více než 100 skladeb z dílny Lennon &amp; McCartney, Harrison &amp; Starr</p>
+      <p class="hero-subtitle">Autentická energie &amp; nestárnoucí hity The Beatles naživo</p>
+      <p class="hero-tagline">Více než 100 legendárních písní Johna, Paula, George a Ringa v precizním podání s dobovým zvukem.</p>
       <div class="hero-cta">
-        <a href="#concerts" class="btn btn-primary">Nejbližší koncerty</a>
-        <a href="#about" class="btn btn-outline">Poznej nás</a>
+        <a href="#concerts" class="btn btn-primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+          Nejbližší koncerty
+        </a>
+        <a href="#contact" class="btn btn-gold">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          Rezervace &amp; Booking
+        </a>
       </div>
     </div>
-    <div class="hero-scroll-indicator">
-      <span></span>
+    <div class="hero-quick-bar">
+      <div class="quick-stat"><strong>30+ let</strong> na pódiích</div>
+      <div class="quick-divider"></div>
+      <div class="quick-stat"><strong>100+ skladeb</strong> Beatles</div>
+      <div class="quick-divider"></div>
+      <div class="quick-stat"><strong>100% Live</strong> autentický zvuk</div>
     </div>
+    <a href="#about" class="hero-scroll-indicator" aria-label="Přejít dolů">
+      <span></span>
+    </a>
   </section>
 
-  <!-- Upcoming Show Banner -->
+  <!-- Upcoming Show High-Impact Banner -->
   <section class="announcement">
     <div class="container">
       <div class="announcement-content">
-        <span class="announcement-badge">Právě teď</span>
-        <div class="announcement-text">
-          <strong>Big Show na Musilce</strong> — KD Musilova, Brno
-          <span class="announcement-date">17. dubna 2026 &bull; 19:30</span>
+        <div class="announcement-live-indicator">
+          <span class="live-dot"></span>
+          <span class="announcement-badge">Příští koncert</span>
         </div>
-        <a href="#concerts" class="btn btn-small">Detail</a>
+        <div class="announcement-text">
+          <strong>Big Show na Musilce</strong> &bull; KD Musilova 2a, Brno
+          <span class="announcement-date"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> 17. dubna 2026 &bull; 19:30</span>
+        </div>
+        <div class="announcement-actions">
+          <a href="#concerts" class="btn btn-small">Vstupenky &amp; Detaily</a>
+        </div>
       </div>
     </div>
   </section>
@@ -367,34 +390,119 @@
     </div>
   </section>
 
-  <!-- Gallery Section -->
-  <section class="section" id="gallery">
+  <!-- Media & Audio Section -->
+  <section class="section" id="media">
     <div class="container">
-      <h2 class="section-title">Fotky</h2>
+      <div class="section-head">
+        <h2 class="section-title">Media &amp; Zvuk</h2>
+        <p class="section-intro">Poslechněte si náš živý projev a atmosféru z koncertů</p>
+      </div>
+
+      <div class="media-grid">
+        <div class="media-video-card">
+          <div class="video-container">
+            <div class="video-placeholder">
+              <img src="images/uvodni.jpg" alt="Live performance preview" class="video-poster">
+              <div class="video-play-btn" aria-label="Spustit ukázku">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              </div>
+              <div class="video-label">Živé vystoupení &bull; Koncertní sestřih</div>
+            </div>
+          </div>
+          <div class="video-caption">
+            <h3>Live at Musilka &amp; Kluby ČR</h3>
+            <p>Atmosféra našich vystoupení s hity od ranných Beatles až po období Abbey Road.</p>
+          </div>
+        </div>
+
+        <div class="media-audio-card">
+          <h3>Zvukové ukázky z repertoáru</h3>
+          <p class="media-audio-desc">Autentické kytary Epiphone, baskytara Hofner/Viola a vícehlasé vokály.</p>
+          
+          <div class="audio-playlist">
+            <div class="audio-track">
+              <div class="track-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+              </div>
+              <div class="track-info">
+                <span class="track-title">A Hard Day's Night</span>
+                <span class="track-meta">The Glass Onion Live</span>
+              </div>
+              <span class="track-badge">Live</span>
+            </div>
+
+            <div class="audio-track">
+              <div class="track-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+              </div>
+              <div class="track-info">
+                <span class="track-title">Help!</span>
+                <span class="track-meta">The Glass Onion Live</span>
+              </div>
+              <span class="track-badge">Live</span>
+            </div>
+
+            <div class="audio-track">
+              <div class="track-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+              </div>
+              <div class="track-info">
+                <span class="track-title">Twist and Shout</span>
+                <span class="track-meta">The Glass Onion Live</span>
+              </div>
+              <span class="track-badge">Live</span>
+            </div>
+          </div>
+
+          <div class="media-download-box">
+            <a href="https://www.facebook.com/theglassonioncz" target="_blank" rel="noopener" class="btn btn-outline btn-full">
+              Sledujte nová videa na Facebooku
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="section section-dark" id="gallery">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">Fotogalerie</h2>
+        <p class="section-intro">Momentky z koncertů, nástroje a historie kapely</p>
+      </div>
       <div class="gallery-grid">
         <div class="gallery-item">
-          <img src="images/uvodni.jpg" alt="The Glass Onion" loading="lazy">
+          <img src="images/uvodni.jpg" alt="The Glass Onion na pódiu" loading="lazy">
+          <div class="gallery-overlay"><span>The Glass Onion Live</span></div>
         </div>
         <div class="gallery-item">
           <img src="images/hist01.jpg" alt="Historická fotka" loading="lazy">
+          <div class="gallery-overlay"><span>Z archivu kapely</span></div>
         </div>
         <div class="gallery-item">
           <img src="images/bici.jpg" alt="Bicí Pearl Forum" loading="lazy">
+          <div class="gallery-overlay"><span>Bicí Pearl Forum</span></div>
         </div>
         <div class="gallery-item">
           <img src="images/e-kytara1.jpg" alt="Epiphone Sheraton II" loading="lazy">
+          <div class="gallery-overlay"><span>Epiphone Sheraton II</span></div>
         </div>
         <div class="gallery-item">
           <img src="images/e-kytara2.jpg" alt="Epiphone Casino" loading="lazy">
+          <div class="gallery-overlay"><span>Epiphone Casino</span></div>
         </div>
         <div class="gallery-item">
           <img src="images/a-kytara.jpg" alt="Crafter DE-24" loading="lazy">
+          <div class="gallery-overlay"><span>Crafter DE-24</span></div>
         </div>
         <div class="gallery-item">
           <img src="images/basa.jpg" alt="Epiphone Viola Bass" loading="lazy">
+          <div class="gallery-overlay"><span>Epiphone Viola Bass</span></div>
         </div>
         <div class="gallery-item">
           <img src="images/kyt-kombo.jpg" alt="Line6 Flextone II" loading="lazy">
+          <div class="gallery-overlay"><span>Aparatura Line6</span></div>
         </div>
       </div>
     </div>
