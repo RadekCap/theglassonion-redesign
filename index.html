@@ -3,460 +3,379 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>The Glass Onion — Beatles Revival Band</title>
-  <meta name="description" content="The Glass Onion - Beatles revival band z Brna. Více než 100 skladeb, autentický zvuk 60. let, koncerty po celé ČR.">
-  <meta name="keywords" content="Beatles, revival, tribute band, Brno, The Glass Onion, koncerty, live music">
-  <meta name="author" content="The Glass Onion">
-  <link rel="icon" href="http://www.theglassonion.cz/pict/tgo.ico">
+  <title>The Glass Onion — The Ultimate Beatles Live Experience</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800;900&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+  <!-- Floating Ambient Stage Glow -->
+  <div class="stage-spotlight-left"></div>
+  <div class="stage-spotlight-right"></div>
+
   <!-- Navigation -->
-  <nav class="navbar" id="navbar">
-    <div class="nav-container">
-      <a href="#hero" class="nav-logo">
-        <span class="logo-accent">The</span> Glass Onion
+  <header class="navbar" id="navbar">
+    <div class="nav-wrapper">
+      <a href="#hero" class="nav-brand">
+        <span class="brand-sub">Beatles Revival</span>
+        <span class="brand-title">THE GLASS ONION</span>
       </a>
-      <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation">
         <span></span><span></span><span></span>
       </button>
-      <ul class="nav-menu">
-        <li><a href="#about">O kapele</a></li>
-        <li><a href="#members">Sestava</a></li>
-        <li><a href="#concerts">Koncerty</a></li>
-        <li><a href="#repertoire">Repertoár</a></li>
-        <li><a href="#media">Media &amp; Video</a></li>
-        <li><a href="#gallery">Fotogalerie</a></li>
-        <li><a href="#contact" class="nav-btn">Objednat koncert</a></li>
-      </ul>
-    </div>
-  </nav>
 
-  <!-- Hero Section (Full-Screen Impact) -->
-  <section class="hero" id="hero">
-    <div class="hero-bg"></div>
-    <div class="hero-overlay-gradient"></div>
-    <div class="hero-content">
-      <div class="hero-badge">Beatles Revival Band &bull; Brno &bull; Od roku 1993</div>
-      <h1 class="hero-title">The Glass Onion</h1>
-      <p class="hero-subtitle">Autentická energie &amp; nestárnoucí hity The Beatles naživo</p>
-      <p class="hero-tagline">Více než 100 legendárních písní Johna, Paula, George a Ringa v precizním podání s dobovým zvukem.</p>
-      <div class="hero-cta">
-        <a href="#concerts" class="btn btn-primary">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
-          Nejbližší koncerty
-        </a>
-        <a href="#contact" class="btn btn-gold">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-          Rezervace &amp; Booking
-        </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#about">Kapela</a>
+        <a href="#shows">Koncerty</a>
+        <a href="#lineup">Sestava</a>
+        <a href="#media">Media &amp; Video</a>
+        <a href="#gallery">Galerie</a>
+        <a href="#booking" class="btn-nav-book">Objednat vystoupení</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section (Pure Image Dominance like thebeatlesrevival.cz) -->
+  <section class="hero hero-dominated" id="hero">
+    <div class="hero-photo-bg"></div>
+    <div class="hero-subtle-gradient"></div>
+
+    <div class="hero-bottom-stage">
+      <div class="container hero-stage-inner">
+        <div class="hero-title-group">
+          <div class="hero-live-tag">
+            <span class="pulse-dot"></span>
+            <span>BEATLES REVIVAL BAND &bull; BRNO</span>
+          </div>
+          <h1 class="hero-giant-title">THE GLASS ONION</h1>
+          <p class="hero-pure-subtitle">Nejautentičtější koncertní zážitek slavné éry The Beatles</p>
+        </div>
+
+        <div class="hero-stage-ctas">
+          <a href="#shows" class="btn btn-gold btn-hero">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+            Koncerty 2026
+          </a>
+          <a href="#booking" class="btn btn-glass btn-hero">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            Objednat vystoupení
+          </a>
+          <div class="hero-socials" aria-label="Sociální sítě">
+            <span>Sledujte nás</span>
+            <a href="https://www.facebook.com/theglassonioncz" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07c0 6.02 4.39 11 10.13 11.93v-8.44H7.08v-3.49h3.05V9.41c0-3.03 1.79-4.7 4.53-4.7 1.31 0 2.69.24 2.69.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.88v2.27h3.33l-.53 3.49h-2.8V24C19.61 23.07 24 18.09 24 12.07z"/></svg></a>
+            <a href="https://www.instagram.com/theglassonioncz" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7.05 1.17h9.9a5.88 5.88 0 0 1 5.88 5.88v9.9a5.88 5.88 0 0 1-5.88 5.88h-9.9a5.88 5.88 0 0 1-5.88-5.88v-9.9a5.88 5.88 0 0 1 5.88-5.88zm-.24 2.1a3.54 3.54 0 0 0-3.54 3.54v9.42a3.54 3.54 0 0 0 3.54 3.54h10.38a3.54 3.54 0 0 0 3.54-3.54V6.81a3.54 3.54 0 0 0-3.54-3.54H6.81zm5.19 2.76a5.97 5.97 0 1 1 0 11.94 5.97 5.97 0 0 1 0-11.94zm0 2.1a3.87 3.87 0 1 0 0 7.74 3.87 3.87 0 0 0 0-7.74zm6.21-2.65a1.4 1.4 0 1 1 0 2.8 1.4 1.4 0 0 1 0-2.8z"/></svg></a>
+            <a href="https://www.threads.net/@theglassonioncz" target="_blank" rel="noopener" aria-label="Threads"><svg viewBox="0 0 24 24" aria-hidden="true"><text x="12" y="17" text-anchor="middle" fill="currentColor" font-size="17" font-family="Arial, sans-serif">@</text></svg></a>
+            <a href="https://x.com/TheGlassOnionCZ" target="_blank" rel="noopener" aria-label="X"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.22-6.82-5.96 6.82H1.67l7.73-8.84L1.32 2.25h6.83l4.71 6.23 5.38-6.23zm-1.16 17.52h1.83L7.99 4.13H6.03l11.05 15.64z"/></svg></a>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="hero-quick-bar">
-      <div class="quick-stat"><strong>30+ let</strong> na pódiích</div>
-      <div class="quick-divider"></div>
-      <div class="quick-stat"><strong>100+ skladeb</strong> Beatles</div>
-      <div class="quick-divider"></div>
-      <div class="quick-stat"><strong>100% Live</strong> autentický zvuk</div>
-    </div>
-    <a href="#about" class="hero-scroll-indicator" aria-label="Přejít dolů">
-      <span></span>
+
+    <a href="#shows" class="scroll-down-btn" aria-label="Scroll dolů">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
     </a>
   </section>
 
-  <!-- Upcoming Show High-Impact Banner -->
-  <section class="announcement">
-    <div class="container">
-      <div class="announcement-content">
-        <div class="announcement-live-indicator">
-          <span class="live-dot"></span>
-          <span class="announcement-badge">Příští koncert</span>
-        </div>
-        <div class="announcement-text">
-          <strong>Big Show na Musilce</strong> &bull; KD Musilova 2a, Brno
-          <span class="announcement-date"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> 17. dubna 2026 &bull; 19:30</span>
-        </div>
-        <div class="announcement-actions">
-          <a href="#concerts" class="btn btn-small">Vstupenky &amp; Detaily</a>
-        </div>
+  <!-- Live Next Show Alert -->
+  <aside class="live-alert-bar">
+    <div class="container alert-flex">
+      <div class="alert-info">
+        <span class="alert-badge"><span class="badge-dot"></span> NEJBLIŽŠÍ KONCERT</span>
+        <span class="alert-title"><strong>Big Show na Musilce</strong> — Brno, KD Musilova</span>
+        <span class="alert-time">Pátek 17. dubna 2026 od 19:30</span>
       </div>
+      <a href="#shows" class="btn btn-sm btn-gold">Vstupenky &amp; Info</a>
     </div>
-  </section>
+  </aside>
 
-  <!-- About Section -->
+  <!-- About / Band Story -->
   <section class="section" id="about">
     <div class="container">
-      <h2 class="section-title">O kapele</h2>
-      <div class="about-grid">
-        <div class="about-text">
-          <p>
+      <div class="split-story">
+        <div class="story-visual">
+          <div class="img-frame primary-frame">
+            <img src="images/IMG_4285.JPG" alt="The Glass Onion na koncertě">
+            <div class="frame-tag">Live in Concert</div>
+          </div>
+          <div class="img-frame secondary-frame">
+            <img src="images/hist01.jpg" alt="The Glass Onion archivní foto">
+            <div class="frame-tag">Established 1993</div>
+          </div>
+        </div>
+
+        <div class="story-text">
+          <div class="section-tag">O KAPELE</div>
+          <h2 class="section-title">O kapele</h2>
+
+          <p class="lead-p">
             THE GLASS ONION je skupina hrající skladby asi nejznámější kapely všech dob — The Beatles.
             V našem repertoáru najdete víc než 100 písní, které pocházejí buď přímo z kuchařské dílny
             pánů Johna Lennona, Paula McCartneyho, George Harrisona a Ringo Starra, anebo jsou přinejmenším
             v jejich podání dobře známy.
           </p>
+
           <p>
             Svým stylem se Beatles snažíme co nejvíce přiblížit, nechceme se jim však podobat v každém
             detailu a být stejní jako oni. Chtěli bychom zůstat sví a pokračovat v tom, co jsme doposud
-            dělali — a to je hlavně <em>"bavit lidi"</em>.
+            dělali — a to je hlavně <em>„bavit lidi“</em>.
           </p>
+
           <p>
             Skupina vznikla na začátku roku 1993 na gymnáziu Vídeňská v Brně, kde tři z nás prožili
             část svého mládí. Postupně jsme se propracovali k prvním veřejným vystoupením a dnes již
             více než třicet let pořádáme pravidelné koncerty převážně v brněnských klubech.
           </p>
-        </div>
-        <div class="about-highlights">
-          <div class="highlight-card">
-            <span class="highlight-number">30+</span>
-            <span class="highlight-label">let na scéně</span>
-          </div>
-          <div class="highlight-card">
-            <span class="highlight-number">100+</span>
-            <span class="highlight-label">skladeb v repertoáru</span>
-          </div>
-          <div class="highlight-card">
-            <span class="highlight-number">5</span>
-            <span class="highlight-label">členů kapely</span>
-          </div>
+
         </div>
       </div>
 
-      <!-- Equipment & Costumes -->
-      <div class="about-extras">
-        <div class="extra-card">
+      <div class="story-details">
+        <article>
           <h3>Nástroje</h3>
           <p>Ve snaze co nejvíce se přizpůsobit vzhledem i zvukem době 60. let používáme nástroje
             jako Epiphone Sheraton II, Epiphone Casino, Epiphone Viola bass, 12-ti strunnou Aria,
             akustickou Crafter a klávesy Roland Juno. Vlastní aparaturu i zvukaře.</p>
-        </div>
-        <div class="extra-card">
+        </article>
+        <article>
           <h3>Kostýmy</h3>
           <p>Vystupujeme v klasických černých oblecích vzor Beatles 1962 nebo v kopiích
-            „seržantovských" uniforem podle alba Sgt. Pepper's Lonely Hearts Club Band.</p>
-        </div>
-        <div class="extra-card">
+            „seržantovských“ uniforem podle alba Sgt. Pepper’s Lonely Hearts Club Band.</p>
+        </article>
+        <article>
           <h3>Pro pořadatele</h3>
           <p>Standardní délka vystoupení je do 2 hodin čistého času hraní. Disponujeme vlastním
             PA systémem vhodným pro malé i velké sály (cca 600 lidí). Požadujeme pódium min. 4×5 m.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Concerts Tour Schedule -->
+  <section class="section section-dark" id="shows">
+    <div class="container">
+      <div class="section-head text-center">
+        <div class="section-tag">PROGRAM KONCERTŮ</div>
+        <h2 class="section-title">Turné &amp; Vystoupení 2026</h2>
+        <p class="section-subtitle">Přijďte zažít neopakovatelnou atmosféru Beatles naživo</p>
+      </div>
+
+      <div class="tour-list">
+        <!-- Tour Item 1 -->
+        <article class="tour-row featured-tour">
+          <div class="tour-date-box">
+            <span class="tour-day">17</span>
+            <span class="tour-month">DUBEN</span>
+            <span class="tour-year">2026</span>
+          </div>
+
+          <div class="tour-main-info">
+            <div class="tour-badge-highlight">PŘÍŠTÍ VYSTOUPENÍ</div>
+            <h3 class="tour-name">Big Show na Musilce</h3>
+            <p class="tour-venue"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> KD Musilova 2a, Brno</p>
+          </div>
+
+          <div class="tour-timing">
+            <span class="time-label">Začátek</span>
+            <span class="time-val">19:30</span>
+          </div>
+
+          <div class="tour-cta">
+            <a href="#booking" class="btn btn-gold btn-sm">Rezervace / Info</a>
+          </div>
+        </article>
+
+        <!-- Tour Item 2 Placeholder -->
+        <article class="tour-row">
+          <div class="tour-date-box">
+            <span class="tour-day">29</span>
+            <span class="tour-month">KVĚTEN</span>
+            <span class="tour-year">2026</span>
+          </div>
+
+          <div class="tour-main-info">
+            <h3 class="tour-name">Rock &amp; Revival Open Air</h3>
+            <p class="tour-venue"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Zámecký park, Jižní Morava</p>
+          </div>
+
+          <div class="tour-timing">
+            <span class="time-label">Začátek</span>
+            <span class="time-val">20:00</span>
+          </div>
+
+          <div class="tour-cta">
+            <a href="#booking" class="btn btn-outline btn-sm">Info o akci</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="tour-footer-box">
+        <p>Plánujete festival, městské slavnosti, firemní večírek nebo klubový večer?</p>
+        <a href="#booking" class="btn btn-gold">Poptat volný termín pro vaši akci</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Band Members / Lineup -->
+  <section class="section" id="lineup">
+    <div class="container">
+      <div class="section-head text-center">
+        <div class="section-tag">SESTAVA</div>
+        <h2 class="section-title">Členové kapely</h2>
+        <p class="section-subtitle">Pětice muzikantů s láskou k originálnímu odkazu The Beatles</p>
+      </div>
+
+      <div class="lineup-grid">
+        <!-- Member 1 -->
+        <div class="lineup-card">
+          <div class="lineup-photo">
+            <img src="images/Kuba.JPG" alt="Jakub Hustý (Kubrt)">
+            <div class="photo-overlay"></div>
+          </div>
+          <div class="lineup-details">
+            <span class="role-badge">Baskytara &bull; Vokály</span>
+            <h3 class="member-name">Jakub Hustý</h3>
+            <span class="member-nickname">„Kubrt”</span>
+            <p class="member-desc">Hudební motor kapely od klavíru po basu. Zajišťuje management a organizaci vystoupení.</p>
+          </div>
+        </div>
+
+        <!-- Member 2 -->
+        <div class="lineup-card">
+          <div class="lineup-photo">
+            <img src="images/Robert.JPG" alt="Robert Oršáček">
+            <div class="photo-overlay"></div>
+          </div>
+          <div class="lineup-details">
+            <span class="role-badge">Bicí &bull; Zpěv</span>
+            <h3 class="member-name">Robert Oršáček</h3>
+            <span class="member-nickname">„Robert W. Kraater”</span>
+            <p class="member-desc">Tělem i duší ryzí rocker. Rytmický tep kapely a nezkrotná pódiová energie.</p>
+          </div>
+        </div>
+
+        <!-- Member 3 -->
+        <div class="lineup-card">
+          <div class="lineup-photo">
+            <img src="images/Pavel.JPG" alt="Pavel Rovnanék">
+            <div class="photo-overlay"></div>
+          </div>
+          <div class="lineup-details">
+            <span class="role-badge">Sólový zpěv &bull; Kytary &bull; Klávesy</span>
+            <h3 class="member-name">Pavel Rovnanék</h3>
+            <span class="member-nickname">„Pauli”</span>
+            <p class="member-desc">Multiinstrumentalista a hlavní vokální pilíř s bohatou sborovou praxí.</p>
+          </div>
+        </div>
+
+        <!-- Member 4 -->
+        <div class="lineup-card">
+          <div class="lineup-photo">
+            <img src="images/Mike.JPG" alt="Marcel Schüller">
+            <div class="photo-overlay"></div>
+          </div>
+          <div class="lineup-details">
+            <span class="role-badge">Sólová kytara &bull; Zpěv</span>
+            <h3 class="member-name">Marcel Schüller</h3>
+            <span class="member-nickname">„Majk”</span>
+            <p class="member-desc">Kytarový virtuos, který do kapely přinesl první beatlesácké nahrávky a autentický vintage tón.</p>
+          </div>
+        </div>
+
+        <!-- Member 5 -->
+        <div class="lineup-card">
+          <div class="lineup-photo">
+            <img src="images/filip-dark.jpg" alt="Filip Hustý">
+            <div class="photo-overlay"></div>
+          </div>
+          <div class="lineup-details">
+            <span class="role-badge">Zvuková režie &bull; Sound Master</span>
+            <h3 class="member-name">Filip Hustý</h3>
+            <span class="member-nickname">„Fidla”</span>
+            <p class="member-desc">Šedá eminence za mixážním pultem dbající na krystalickou čistotu a sílu zvuku v sále.</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Members Section -->
-  <section class="section section-dark" id="members">
+  <!-- Media Section: Sound & Video Stage -->
+  <section class="section section-dark" id="media">
     <div class="container">
-      <h2 class="section-title">Členové</h2>
-      <div class="members-grid">
-
-        <article class="member-card">
-          <div class="member-image">
-            <img src="images/jakub.jpg" alt="Jakub Hustý" loading="lazy">
-          </div>
-          <div class="member-info">
-            <h3>Jakub Hustý <span class="member-nick">(Kubrt)</span></h3>
-            <p class="member-role">Vokály, basová kytara, příležitostně klávesy</p>
-            <p class="member-bio">Z celé kapely má asi největší hudební vzdělání. Od útlého dětství
-              dřel své prsty hrou na klavír. Na baskytaru se naučil hrát až na gymnáziu, kdy jsme
-              poprvé začali hrát písničky Beatles. Civilním povoláním je lékař. Na divoké vodě to umí
-              možná ještě lépe než s basou.</p>
-          </div>
-        </article>
-
-        <article class="member-card">
-          <div class="member-image">
-            <img src="images/robin.jpg" alt="Robert Oršáček" loading="lazy">
-          </div>
-          <div class="member-info">
-            <h3>Robert Oršáček <span class="member-nick">(Robert W. Kraater)</span></h3>
-            <p class="member-role">Zpěv, vokály, bicí</p>
-            <p class="member-bio">Na první pohled se může zdát, že je to Ringo Starr. Není to pravda —
-              Ringo tolik nezpíval. Narozdíl od ostatních členů kapely nemá sice žádné hudební vzdělání,
-              ale je to talent. Jako jediný byl odjakživa tělem i duší rocker. Dokáže se do hudby vžít
-              natolik, že zapomíná texty.</p>
-          </div>
-        </article>
-
-        <article class="member-card">
-          <div class="member-image">
-            <img src="images/pavel.jpg" alt="Pavel Rovnanék" loading="lazy">
-          </div>
-          <div class="member-info">
-            <h3>Pavel Rovnanék <span class="member-nick">(Pauli)</span></h3>
-            <p class="member-role">Zpěv, vokály, el. kytara, akust. kytara, klávesy, příležitostně baskytara</p>
-            <p class="member-bio">V kapele ovládá největší počet nástrojů a někdy i všechny současně.
-              Pomocí svých kláves zahraje smyčcový nebo žesťový orchestr. V pěti letech mu řekli, že nemá
-              hudební sluch — v devíti se naučil hrát na harmoniku a tím vše začalo. Hlas vytrénovaný
-              ze sedmiletého působení v pěveckém sboru.</p>
-          </div>
-        </article>
-
-        <article class="member-card">
-          <div class="member-image">
-            <img src="images/marcel.jpg" alt="Marcel Schüller" loading="lazy">
-          </div>
-          <div class="member-info">
-            <h3>Marcel Schüller <span class="member-nick">(Majk)</span></h3>
-            <p class="member-role">Zpěv, vokály, el. kytara, akust. kytara</p>
-            <p class="member-bio">Kytarový démon — tak zní jeho přezdívka. Kytaru vzal poprvé do ruky
-              ve 13 letech, ale od té doby ji už nepustil. Byl první, kdo nás k Beatles přivedl. Doma
-              našel po rodičích starou desku s největšími peckami, které ho natolik uchvátily, že už
-              téměř nic jiného neposlouchá. Ovládá též hru na foukací harmoniku a mandolínu.</p>
-          </div>
-        </article>
-
-        <article class="member-card">
-          <div class="member-image">
-            <img src="images/filip.jpg" alt="Filip Hustý" loading="lazy">
-          </div>
-          <div class="member-info">
-            <h3>Filip Hustý <span class="member-nick">(Fidla)</span></h3>
-            <p class="member-role">Zvukař</p>
-            <p class="member-bio">Šedá eminence v pozadí — může za to, že nás na koncertech slyšíte.
-              Kdysi hrával na klavír, ale dnes se cítí lépe u svých hejblátek a knoflíků za mixážním
-              pultem. Je věčně nespokojený a opíjí se decibely, kterými vládne. Povoláním je stavební
-              inženýr.</p>
-          </div>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Concerts Section -->
-  <section class="section" id="concerts">
-    <div class="container">
-      <h2 class="section-title">Koncerty</h2>
-      <p class="section-intro">Seznam nejbližších koncertů, kde si nás můžete poslechnout</p>
-
-      <div class="concerts-list">
-        <article class="concert-card concert-upcoming">
-          <div class="concert-date">
-            <span class="concert-day">17</span>
-            <span class="concert-month">DUB</span>
-            <span class="concert-year">2026</span>
-          </div>
-          <div class="concert-info">
-            <h3>Big Show na Musilce</h3>
-            <p class="concert-venue">KD Musilova 2a, Brno</p>
-          </div>
-          <div class="concert-time">
-            <span>19:30</span>
-          </div>
-        </article>
+      <div class="section-head text-center">
+        <div class="section-tag">AUDIO &amp; VIDEO</div>
+        <h2 class="section-title">Koncertní zážitek na vlastní uši</h2>
+        <p class="section-subtitle">Podívejte se na videozáznamy a ochutnejte autentický zvuk</p>
       </div>
 
-      <p class="concerts-note">
-        Další termíny koncertů budou brzy oznámeny. Sledujte nás na
-        <a href="https://www.facebook.com/theglassonioncz" target="_blank" rel="noopener">Facebooku</a>.
-      </p>
-    </div>
-  </section>
-
-  <!-- Repertoire Section -->
-  <section class="section section-dark" id="repertoire">
-    <div class="container">
-      <h2 class="section-title">Repertoár</h2>
-      <p class="section-intro">Více než 100 skladeb ze všech období tvorby The Beatles</p>
-
-      <div class="repertoire-filters">
-        <button class="filter-btn active" data-filter="all">Všechny</button>
-        <button class="filter-btn" data-filter="active">Aktuálně hrajeme</button>
-      </div>
-
-      <div class="repertoire-grid">
-        <div class="song-item">A Day in the Life <span class="song-inactive" title="Momentálně nehrajeme"></span></div>
-        <div class="song-item">A Hard Day's Night</div>
-        <div class="song-item">A Taste of Honey</div>
-        <div class="song-item">Ain't She Sweet</div>
-        <div class="song-item">All My Loving</div>
-        <div class="song-item">All You Need is Love <span class="song-inactive" title="Momentálně nehrajeme"></span></div>
-        <div class="song-item">And I Love Her</div>
-        <div class="song-item">And Your Bird Can Sing</div>
-        <div class="song-item">Anna</div>
-        <div class="song-item">Another Girl</div>
-        <div class="song-item">Any Time at All</div>
-        <div class="song-item">Ask Me Why</div>
-        <div class="song-item">Baby It's You</div>
-        <div class="song-item">Baby's in Black</div>
-        <div class="song-item">Back in the USSR</div>
-        <div class="song-item">Because <span class="song-inactive" title="Momentálně nehrajeme"></span></div>
-        <div class="song-item">Can't Buy Me Love</div>
-        <div class="song-item">Carry That Weight</div>
-        <div class="song-item">Come Together</div>
-        <div class="song-item">Day Tripper</div>
-        <div class="song-item">Dig a Pony</div>
-        <div class="song-item">Dizzy Miss Lizzy</div>
-        <div class="song-item">Do You Want to Know a Secret?</div>
-        <div class="song-item">Doctor Robert</div>
-        <div class="song-item">Don't Bother Me <span class="song-inactive" title="Momentálně nehrajeme"></span></div>
-        <div class="song-item">Don't Let Me Down <span class="song-inactive" title="Momentálně nehrajeme"></span></div>
-        <div class="song-item">Drive My Car</div>
-        <div class="song-item">Eight Days a Week</div>
-        <div class="song-item">Every Little Thing</div>
-        <div class="song-item">Free as a Bird</div>
-        <div class="song-item">From Me to You</div>
-        <div class="song-item">Get Back</div>
-        <div class="song-item">Girl</div>
-        <div class="song-item">Glass Onion</div>
-        <div class="song-item">Golden Slumbers</div>
-        <div class="song-item">Happiness Is a Warm Gun <span class="song-inactive" title="Momentálně nehrajeme"></span></div>
-        <div class="song-item">Hello Little Girl</div>
-        <div class="song-item">Help!</div>
-        <div class="song-item">Here Comes the Sun</div>
-        <div class="song-item">Hey Bulldog</div>
-        <div class="song-item">Hey Jude</div>
-        <div class="song-item">Hold Me Tight <span class="song-inactive" title="Momentálně nehrajeme"></span></div>
-        <div class="song-item">Christmas Time is Here Again <span class="song-inactive" title="Momentálně nehrajeme"></span></div>
-        <div class="song-item">I Call Your Name</div>
-        <div class="song-item">I Don't Want to Spoil the Party</div>
-        <div class="song-item">I Feel Fine</div>
-        <div class="song-item">I Need You</div>
-        <div class="song-item">I Saw Her Standing There</div>
-        <div class="song-item">I Should Have Known Better</div>
-        <div class="song-item">I Want to Hold Your Hand</div>
-        <div class="song-item">I'll Be Back</div>
-        <div class="song-item">I'll Be on My Way</div>
-        <div class="song-item">I'll Cry Instead</div>
-        <div class="song-item">I'll Get You</div>
-        <div class="song-item">I'm a Loser</div>
-        <div class="song-item">I'm Happy Just to Dance With You</div>
-        <div class="song-item">I've Just Seen a Face</div>
-        <div class="song-item">If I Fell</div>
-        <div class="song-item">If I Needed Someone</div>
-        <div class="song-item">Imagine</div>
-        <div class="song-item">In My Life</div>
-        <div class="song-item">It Won't Be Long <span class="song-inactive" title="Momentálně nehrajeme"></span></div>
-        <div class="song-item">It's Only Love <span class="song-inactive" title="Momentálně nehrajeme"></span></div>
-        <div class="song-item">Lady Madonna</div>
-        <div class="song-item">Let It Be</div>
-        <div class="song-item">Love Me Do</div>
-        <div class="song-item">Lovely Rita</div>
-        <div class="song-item">Lucy in the Sky With Diamonds</div>
-        <div class="song-item">Magical Mystery Tour</div>
-        <div class="song-item">Mean Mr. Mustard</div>
-        <div class="song-item">Michelle</div>
-        <div class="song-item">Misery</div>
-        <div class="song-item">My Sweet Lord <span class="song-inactive" title="Momentálně nehrajeme"></span></div>
-        <div class="song-item">No Reply</div>
-        <div class="song-item">Norwegian Wood</div>
-        <div class="song-item">Not a Second Time</div>
-        <div class="song-item">Nowhere Man</div>
-        <div class="song-item">Octopus's Garden</div>
-        <div class="song-item">Oh! Darling</div>
-        <div class="song-item">One After 909</div>
-        <div class="song-item">P.S. I Love You <span class="song-inactive" title="Momentálně nehrajeme"></span></div>
-        <div class="song-item">Paperback Writer <span class="song-inactive" title="Momentálně nehrajeme"></span></div>
-        <div class="song-item">Please Mister Postman</div>
-        <div class="song-item">Please Please Me</div>
-        <div class="song-item">Polythene Pam</div>
-        <div class="song-item">Rock and Roll Music</div>
-        <div class="song-item">Run for Your Life <span class="song-inactive" title="Momentálně nehrajeme"></span></div>
-        <div class="song-item">Sgt Pepper's Lonely Hearts Club Band</div>
-        <div class="song-item">Sgt Pepper's (Reprise)</div>
-        <div class="song-item">She Came in Through the Bathroom Window</div>
-        <div class="song-item">She Loves You</div>
-        <div class="song-item">She's a Woman</div>
-        <div class="song-item">Soldier of Love</div>
-        <div class="song-item">Tell Me Why</div>
-        <div class="song-item">Thank You Girl</div>
-        <div class="song-item">That Means A Lot</div>
-        <div class="song-item">The Night Before</div>
-        <div class="song-item">There's a Place</div>
-        <div class="song-item">Things We Said Today</div>
-        <div class="song-item">This Boy</div>
-        <div class="song-item">Ticket to Ride</div>
-        <div class="song-item">Twist and Shout</div>
-        <div class="song-item">Two of Us</div>
-        <div class="song-item">Wait</div>
-        <div class="song-item">We Can Work It Out</div>
-        <div class="song-item">When I Get Home</div>
-        <div class="song-item">While My Guitar Gently Weeps <span class="song-inactive" title="Momentálně nehrajeme"></span></div>
-        <div class="song-item">With a Little Help From My Friends</div>
-        <div class="song-item">Yes It Is</div>
-        <div class="song-item">Yesterday</div>
-        <div class="song-item">You Can't Do That</div>
-        <div class="song-item">You Like Me Too Much <span class="song-inactive" title="Momentálně nehrajeme"></span></div>
-        <div class="song-item">You Really Got a Hold on Me</div>
-        <div class="song-item">You're Going to Lose That Girl</div>
-        <div class="song-item">You've Got to Hide Your Love Away</div>
-        <div class="song-item">You Won't See Me <span class="song-inactive" title="Momentálně nehrajeme"></span></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Media & Audio Section -->
-  <section class="section" id="media">
-    <div class="container">
-      <div class="section-head">
-        <h2 class="section-title">Media &amp; Zvuk</h2>
-        <p class="section-intro">Poslechněte si náš živý projev a atmosféru z koncertů</p>
-      </div>
-
-      <div class="media-grid">
-        <div class="media-video-card">
-          <div class="video-container">
-            <div class="video-placeholder">
-              <img src="images/uvodni.jpg" alt="Live performance preview" class="video-poster">
-              <div class="video-play-btn" aria-label="Spustit ukázku">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+      <div class="media-stage-grid">
+        <!-- Big Video Showcase -->
+        <div class="video-stage-main">
+          <div class="stage-screen">
+            <img src="images/uvodni.jpg" alt="Live concert screen" class="screen-bg">
+            <div class="screen-overlay">
+              <button class="screen-play-btn" aria-label="Play Live Video">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              </button>
+              <div class="screen-caption">
+                <span class="badge-live-stream">KONCERTNÍ ZÁZNAM</span>
+                <h3>The Glass Onion — Live Anthology Show</h3>
+                <p>Výběr z živých vystoupení v brněnských sálech a klubech</p>
               </div>
-              <div class="video-label">Živé vystoupení &bull; Koncertní sestřih</div>
             </div>
-          </div>
-          <div class="video-caption">
-            <h3>Live at Musilka &amp; Kluby ČR</h3>
-            <p>Atmosféra našich vystoupení s hity od ranných Beatles až po období Abbey Road.</p>
           </div>
         </div>
 
-        <div class="media-audio-card">
-          <h3>Zvukové ukázky z repertoáru</h3>
-          <p class="media-audio-desc">Autentické kytary Epiphone, baskytara Hofner/Viola a vícehlasé vokály.</p>
-          
-          <div class="audio-playlist">
-            <div class="audio-track">
-              <div class="track-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+        <!-- Live Soundboard Tracks -->
+        <div class="audio-soundboard">
+          <div class="soundboard-header">
+            <h3><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg> Ukázky z repertoáru</h3>
+            <span class="soundboard-tag">100% Live Direct</span>
+          </div>
+
+          <div class="soundboard-tracks">
+            <div class="s-track active">
+              <div class="s-track-btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg></div>
+              <div class="s-track-meta">
+                <strong>A Hard Day's Night</strong>
+                <span>The Beatles (1964) &bull; Live Record</span>
               </div>
-              <div class="track-info">
-                <span class="track-title">A Hard Day's Night</span>
-                <span class="track-meta">The Glass Onion Live</span>
-              </div>
-              <span class="track-badge">Live</span>
+              <span class="s-track-dur">2:38</span>
             </div>
 
-            <div class="audio-track">
-              <div class="track-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+            <div class="s-track">
+              <div class="s-track-btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg></div>
+              <div class="s-track-meta">
+                <strong>Twist and Shout</strong>
+                <span>The Beatles (1963) &bull; Live Record</span>
               </div>
-              <div class="track-info">
-                <span class="track-title">Help!</span>
-                <span class="track-meta">The Glass Onion Live</span>
-              </div>
-              <span class="track-badge">Live</span>
+              <span class="s-track-dur">2:45</span>
             </div>
 
-            <div class="audio-track">
-              <div class="track-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+            <div class="s-track">
+              <div class="s-track-btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg></div>
+              <div class="s-track-meta">
+                <strong>Help!</strong>
+                <span>The Beatles (1965) &bull; Live Record</span>
               </div>
-              <div class="track-info">
-                <span class="track-title">Twist and Shout</span>
-                <span class="track-meta">The Glass Onion Live</span>
+              <span class="s-track-dur">2:20</span>
+            </div>
+
+            <div class="s-track">
+              <div class="s-track-btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg></div>
+              <div class="s-track-meta">
+                <strong>Hey Jude</strong>
+                <span>The Beatles (1968) &bull; Live Record</span>
               </div>
-              <span class="track-badge">Live</span>
+              <span class="s-track-dur">4:15</span>
             </div>
           </div>
 
-          <div class="media-download-box">
-            <a href="https://www.facebook.com/theglassonioncz" target="_blank" rel="noopener" class="btn btn-outline btn-full">
-              Sledujte nová videa na Facebooku
+          <div class="soundboard-footer">
+            <a href="https://www.facebook.com/theglassonioncz" target="_blank" rel="noopener" class="btn btn-outline btn-sm btn-full">
+              Sledovat naší oficiální Facebook stránku
             </a>
           </div>
         </div>
@@ -464,110 +383,161 @@
     </div>
   </section>
 
-  <!-- Gallery Section -->
-  <section class="section section-dark" id="gallery">
+  <!-- Photo Gallery Showcase -->
+  <section class="section" id="gallery">
     <div class="container">
-      <div class="section-head">
-        <h2 class="section-title">Fotogalerie</h2>
-        <p class="section-intro">Momentky z koncertů, nástroje a historie kapely</p>
+      <div class="section-head text-center">
+        <div class="section-tag">FOTOGALERIE</div>
+        <h2 class="section-title">Pódiové momentky &amp; Nástroje</h2>
+        <p class="section-subtitle">Originální vybavení 60. let a živá atmosféra</p>
       </div>
-      <div class="gallery-grid">
-        <div class="gallery-item">
-          <img src="images/IMG_4285.JPG" alt="The Glass Onion na pódiu" loading="lazy">
-          <div class="gallery-overlay"><span>The Glass Onion Live</span></div>
+
+      <div class="arena-gallery-grid">
+        <div class="gal-cell gal-wide">
+          <img src="images/IMG_4285.JPG" alt="Kapela na koncertě" loading="lazy">
+          <div class="gal-hover-info">
+            <h4>Live Concert Atmosphere</h4>
+            <span>KD Musilova, Brno</span>
+          </div>
         </div>
-        <div class="gallery-item">
-          <img src="images/hist01.jpg" alt="Historická fotka" loading="lazy">
-          <div class="gallery-overlay"><span>Z archivu kapely</span></div>
-        </div>
-        <div class="gallery-item">
-          <img src="images/bici.jpg" alt="Bicí Pearl Forum" loading="lazy">
-          <div class="gallery-overlay"><span>Bicí Pearl Forum</span></div>
-        </div>
-        <div class="gallery-item">
-          <img src="images/e-kytara1.jpg" alt="Epiphone Sheraton II" loading="lazy">
-          <div class="gallery-overlay"><span>Epiphone Sheraton II</span></div>
-        </div>
-        <div class="gallery-item">
-          <img src="images/e-kytara2.jpg" alt="Epiphone Casino" loading="lazy">
-          <div class="gallery-overlay"><span>Epiphone Casino</span></div>
-        </div>
-        <div class="gallery-item">
-          <img src="images/a-kytara.jpg" alt="Crafter DE-24" loading="lazy">
-          <div class="gallery-overlay"><span>Crafter DE-24</span></div>
-        </div>
-        <div class="gallery-item">
+        <div class="gal-cell">
           <img src="images/basa.jpg" alt="Epiphone Viola Bass" loading="lazy">
-          <div class="gallery-overlay"><span>Epiphone Viola Bass</span></div>
+          <div class="gal-hover-info">
+            <h4>Epiphone Viola Bass</h4>
+            <span>Legendární McCartneyovský basový tón</span>
+          </div>
         </div>
-        <div class="gallery-item">
-          <img src="images/kyt-kombo.jpg" alt="Line6 Flextone II" loading="lazy">
-          <div class="gallery-overlay"><span>Aparatura Line6</span></div>
+        <div class="gal-cell">
+          <img src="images/e-kytara1.jpg" alt="Epiphone Sheraton II" loading="lazy">
+          <div class="gal-hover-info">
+            <h4>Epiphone Sheraton II</h4>
+            <span>Vintage semi-akustický zvuk</span>
+          </div>
+        </div>
+        <div class="gal-cell">
+          <img src="images/bici.jpg" alt="Pearl Forum bicí souprava" loading="lazy">
+          <div class="gal-hover-info">
+            <h4>Bicí souprava</h4>
+            <span>Ringo beat &amp; rytmika</span>
+          </div>
+        </div>
+        <div class="gal-cell">
+          <img src="images/e-kytara2.jpg" alt="Epiphone Casino" loading="lazy">
+          <div class="gal-hover-info">
+            <h4>Epiphone Casino</h4>
+            <span>Lennonovský kytarový zvuk</span>
+          </div>
+        </div>
+        <div class="gal-cell">
+          <img src="images/hist01.jpg" alt="Kapela v archivech" loading="lazy">
+          <div class="gal-hover-info">
+            <h4>Archiv od roku 1993</h4>
+            <span>Více než 30 let tradice</span>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section class="section section-dark" id="contact">
+  <!-- Booking & Promoter Fast-Track -->
+  <section class="section section-dark" id="booking">
     <div class="container">
-      <h2 class="section-title">Kontakt</h2>
-      <p class="section-intro">V případě zájmu o vystoupení kapely kontaktujte Jakuba</p>
+      <div class="booking-card-wrapper">
+        <div class="booking-cta-content">
+          <div class="section-tag">BOOKING &amp; MANAGEMENT</div>
+          <h2 class="booking-title">Objednejte The Glass Onion na vaši akci</h2>
+          <p class="booking-desc">
+            Vhodné pro hudební festivaly, městské a pivní slavnosti, divadelní a kulturní sály, firemní plesy i privátní VIP oslavy.
+          </p>
 
-      <div class="contact-grid">
-        <div class="contact-card contact-primary">
-          <h3>Booking &amp; Management</h3>
-          <p class="contact-name">Jakub Hustý</p>
-          <ul class="contact-details">
-            <li>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-              <a href="tel:+420604518184">+420 604 518 184</a>
-            </li>
-            <li>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-              <a href="mailto:JakubHusty@seznam.cz">JakubHusty@seznam.cz</a>
-            </li>
-          </ul>
+          <div class="booking-specs">
+            <div class="spec-row">
+              <span class="spec-icon">✔</span>
+              <span><strong>Délka vystoupení:</strong> do 120 minut čistého hraní (lze rozdělit do bloků)</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-icon">✔</span>
+              <span><strong>Technika:</strong> Vlastní PA aparatura pro sály do 600 osob + vlastní zvukař</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-icon">✔</span>
+              <span><strong>Požadavky:</strong> Pódium min. 5×4 m, přípojka 230V / 16A</span>
+            </div>
+          </div>
+
+          <div class="contact-direct">
+            <div class="direct-person">
+              <span class="person-role">Manažer kapely &amp; Booking</span>
+              <strong class="person-name">Jakub Hustý</strong>
+            </div>
+
+            <div class="direct-links">
+              <a href="tel:+420604518184" class="direct-btn tel-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                +420 604 518 184
+              </a>
+              <a href="mailto:JakubHusty@seznam.cz" class="direct-btn mail-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                JakubHusty@seznam.cz
+              </a>
+            </div>
+          </div>
+
+          <div class="booking-socials">
+            <span>Sledujte nás</span>
+            <a href="https://www.facebook.com/theglassonioncz" target="_blank" rel="noopener">Facebook</a>
+            <a href="https://www.instagram.com/theglassonioncz" target="_blank" rel="noopener">Instagram</a>
+          </div>
         </div>
-
-        <div class="contact-card">
-          <h3>Členové</h3>
-          <ul class="contact-members">
-            <li><strong>Robert Oršáček</strong> — <a href="mailto:robert.orsacek@post.cz">robert.orsacek@post.cz</a></li>
-            <li><strong>Pavel Rovnanék</strong> — <a href="mailto:paulir@post.cz">paulir@post.cz</a></li>
-            <li><strong>Marcel Schüller</strong> — <a href="mailto:schullerm@email.cz">schullerm@email.cz</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Social Links -->
-      <div class="social-links">
-        <a href="https://www.facebook.com/theglassonioncz" target="_blank" rel="noopener" aria-label="Facebook">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-        </a>
-        <a href="https://www.instagram.com/theglassonioncz" target="_blank" rel="noopener" aria-label="Instagram">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-        </a>
-        <a href="https://twitter.com/TheGlassOnionCZ" target="_blank" rel="noopener" aria-label="X (Twitter)">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-        </a>
-        <a href="https://www.threads.net/@theglassonioncz" target="_blank" rel="noopener" aria-label="Threads">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12.186 24h-.007c-3.581-.024-6.334-1.205-8.184-3.509C2.35 18.44 1.5 15.586 1.472 12.01v-.017c.03-3.579.879-6.43 2.525-8.482C5.845 1.205 8.6.024 12.18 0h.014c2.746.02 5.043.725 6.826 2.098 1.677 1.29 2.858 3.13 3.509 5.467l-2.04.569c-1.104-3.96-3.898-5.984-8.304-6.015-2.91.022-5.11.936-6.54 2.717C4.307 6.504 3.616 8.914 3.59 12c.025 3.086.718 5.496 2.057 7.164 1.432 1.783 3.631 2.698 6.54 2.717 2.623-.02 4.358-.631 5.8-2.045 1.647-1.613 1.618-3.593 1.09-4.798-.31-.71-.873-1.3-1.634-1.75-.192 1.352-.622 2.446-1.284 3.272-.886 1.102-2.14 1.704-3.73 1.79-1.202.065-2.361-.218-3.259-.801-1.063-.689-1.685-1.74-1.752-2.96-.065-1.186.408-2.228 1.33-2.934.868-.665 2.023-1.058 3.348-1.143.966-.062 1.89.009 2.75.186-.077-.427-.2-.825-.373-1.163-.467-.913-1.265-1.396-2.373-1.44h-.077c-.822.016-1.595.26-2.236.703l-1.065-1.69c.9-.617 2.005-.972 3.201-1.031h.112c1.754.052 3.1.725 3.89 1.945.637.985.936 2.239.936 3.676 0 .073-.002.148-.005.224.627.396 1.158.897 1.571 1.49.68.978 1.016 2.168.936 3.538-.034.591-.155 1.17-.366 1.715-.704 1.82-2.161 3.244-4.34 4.228-1.644.743-3.582 1.142-5.765 1.179z"/></svg>
-        </a>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <p class="footer-logo">The Glass Onion</p>
-        <p class="footer-copy">&copy; 2002–2026 The Glass Onion. Beatles revival band, Brno.</p>
+  <footer class="arena-footer">
+    <div class="container footer-flex">
+      <div class="footer-left">
+        <span class="f-brand">THE GLASS ONION</span>
+        <span class="f-sub">The Beatles Revival Band &bull; Brno, Czech Republic</span>
+      </div>
+
+      <div class="footer-socials">
+        <a href="https://www.facebook.com/theglassonioncz" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/theglassonioncz" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        </a>
+        <a href="https://www.threads.net/@theglassonioncz" target="_blank" rel="noopener" aria-label="Threads"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><text x="12" y="17" text-anchor="middle" fill="currentColor" font-size="17" font-family="Arial, sans-serif">@</text></svg></a>
+        <a href="https://x.com/TheGlassOnionCZ" target="_blank" rel="noopener" aria-label="X"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.22-6.82-5.96 6.82H1.67l7.73-8.84L1.32 2.25h6.83l4.71 6.23 5.38-6.23zm-1.16 17.52h1.83L7.99 4.13H6.03l11.05 15.64z"/></svg></a>
+      </div>
+
+      <div class="footer-copy">
+        &copy; 1993–2026 The Glass Onion. Všechna práva vyhrazena.
       </div>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script>
+    // Navigation scroll class
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    // Mobile Toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+      menuToggle.classList.toggle('open');
+    });
+    navLinks.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        menuToggle.classList.remove('open');
+      });
+    });
+  </script>
 </body>
 </html>
