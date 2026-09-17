@@ -19,7 +19,7 @@
   <header class="navbar" id="navbar">
     <div class="nav-wrapper">
       <a href="#hero" class="nav-brand">
-        <span class="brand-sub">Beatles Revival</span>
+        <span class="brand-sub">Beatles Tribute</span>
         <span class="brand-title">THE GLASS ONION</span>
       </a>
 
@@ -31,7 +31,7 @@
         <a href="#about">Kapela</a>
         <a href="#shows">Koncerty</a>
         <a href="#lineup">Sestava</a>
-        <a href="#media">Media &amp; Video</a>
+        <a href="#media">Ukázky</a>
         <a href="#gallery">Galerie</a>
         <a href="#booking" class="btn-nav-book">Objednat vystoupení</a>
       </nav>
@@ -48,7 +48,7 @@
         <div class="hero-title-group">
           <div class="hero-live-tag">
             <span class="pulse-dot"></span>
-            <span>BEATLES REVIVAL BAND &bull; BRNO</span>
+            <span>BEATLES TRIBUTE BAND &bull; BRNO</span>
           </div>
           <h1 class="hero-giant-title">THE GLASS ONION</h1>
           <p class="hero-pure-subtitle">Nejautentičtější koncertní zážitek slavné éry The Beatles</p>
@@ -211,10 +211,6 @@
         </article>
       </div>
 
-      <div class="tour-footer-box">
-        <p>Plánujete festival, městské slavnosti, firemní večírek nebo klubový večer?</p>
-        <a href="#booking" class="btn btn-gold">Poptat volný termín pro vaši akci</a>
-      </div>
     </div>
   </section>
 
@@ -231,7 +227,7 @@
         <!-- Member 1 -->
         <div class="lineup-card">
           <div class="lineup-photo">
-            <img src="images/Kuba.JPG" alt="Jakub Hustý (Kubrt)">
+            <img src="images/Kuba.JPG" alt="Jakub Hustý (Kubrt)" style="object-position: 60% center;">
             <div class="photo-overlay"></div>
           </div>
           <div class="lineup-details">
@@ -245,7 +241,7 @@
         <!-- Member 2 -->
         <div class="lineup-card">
           <div class="lineup-photo">
-            <img src="images/Robert.JPG" alt="Robert Oršáček">
+            <img src="images/Robert.JPG" alt="Robert Oršáček" style="object-position: 80% center;">
             <div class="photo-overlay"></div>
           </div>
           <div class="lineup-details">
@@ -259,7 +255,7 @@
         <!-- Member 3 -->
         <div class="lineup-card">
           <div class="lineup-photo">
-            <img src="images/pavel.jpg" alt="Pavel Rovnanék">
+            <img src="images/pavel.jpg" alt="Pavel Rovnanék" style="object-position: 45% center;">
             <div class="photo-overlay"></div>
           </div>
           <div class="lineup-details">
@@ -273,7 +269,7 @@
         <!-- Member 4 -->
         <div class="lineup-card">
           <div class="lineup-photo">
-            <img src="images/Mike.JPG" alt="Marcel Schüller">
+            <img src="images/Mike.JPG" alt="Marcel Schüller" style="object-position: 65% center;">
             <div class="photo-overlay"></div>
           </div>
           <div class="lineup-details">
@@ -305,71 +301,78 @@
   <section class="section section-dark" id="media">
     <div class="container">
       <div class="section-head text-center">
-        <div class="section-tag">AUDIO &amp; VIDEO</div>
+        <div class="section-tag">UKÁZKY</div>
         <h2 class="section-title">Koncertní zážitek na vlastní uši</h2>
-        <p class="section-subtitle">Podívejte se na videozáznamy a ochutnejte autentický zvuk</p>
+        <p class="section-subtitle">Ochutnejte autentický zvuk.</p>
       </div>
 
       <div class="media-stage-grid">
-        <!-- Big Video Showcase -->
-        <div class="video-stage-main">
-          <div class="stage-screen">
-            <img src="images/uvodni.jpg" alt="Live concert screen" class="screen-bg">
-            <div class="screen-overlay">
-              <button class="screen-play-btn" aria-label="Play Live Video">
-                <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
-              </button>
-              <div class="screen-caption">
-                <span class="badge-live-stream">KONCERTNÍ ZÁZNAM</span>
-                <h3>The Glass Onion — Live Anthology Show</h3>
-                <p>Výběr z živých vystoupení v brněnských sálech a klubech</p>
-              </div>
-            </div>
-          </div>
-        </div>
 
         <!-- Live Soundboard Tracks -->
         <div class="audio-soundboard">
           <div class="soundboard-header">
             <h3><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg> Ukázky z repertoáru</h3>
-            <span class="soundboard-tag">100% Live Direct</span>
           </div>
 
           <div class="soundboard-tracks">
-            <div class="s-track active">
-              <div class="s-track-btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg></div>
+            <div class="s-track" data-src="mp3/Cant_Buy_Me_Love.mp3">
+              <div class="s-track-btn">
+                <svg class="icon-play" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                <svg class="icon-pause" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="display:none"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>
+              </div>
               <div class="s-track-meta">
-                <strong>A Hard Day's Night</strong>
+                <strong>Can't Buy Me Love</strong>
                 <span>The Beatles (1964) &bull; Live Record</span>
               </div>
-              <span class="s-track-dur">2:38</span>
+              <audio src="mp3/Cant_Buy_Me_Love.mp3" preload="none"></audio>
             </div>
 
-            <div class="s-track">
-              <div class="s-track-btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg></div>
+            <div class="s-track" data-src="mp3/From_Me_To_You.mp3">
+              <div class="s-track-btn">
+                <svg class="icon-play" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                <svg class="icon-pause" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="display:none"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>
+              </div>
+              <div class="s-track-meta">
+                <strong>From Me to You</strong>
+                <span>The Beatles (1963) &bull; Live Record</span>
+              </div>
+              <audio src="mp3/From_Me_To_You.mp3" preload="none"></audio>
+            </div>
+
+            <div class="s-track" data-src="mp3/Soldier_Of_Love.mp3">
+              <div class="s-track-btn">
+                <svg class="icon-play" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                <svg class="icon-pause" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="display:none"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>
+              </div>
+              <div class="s-track-meta">
+                <strong>Soldier of Love</strong>
+                <span>The Beatles &bull; Live Record</span>
+              </div>
+              <audio src="mp3/Soldier_Of_Love.mp3" preload="none"></audio>
+            </div>
+
+            <div class="s-track" data-src="mp3/This_Boy.mp3">
+              <div class="s-track-btn">
+                <svg class="icon-play" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                <svg class="icon-pause" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="display:none"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>
+              </div>
+              <div class="s-track-meta">
+                <strong>This Boy</strong>
+                <span>The Beatles (1963) &bull; Live Record</span>
+              </div>
+              <audio src="mp3/This_Boy.mp3" preload="none"></audio>
+            </div>
+
+            <div class="s-track" data-src="mp3/Twist_And_Shout.mp3">
+              <div class="s-track-btn">
+                <svg class="icon-play" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                <svg class="icon-pause" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="display:none"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>
+              </div>
               <div class="s-track-meta">
                 <strong>Twist and Shout</strong>
                 <span>The Beatles (1963) &bull; Live Record</span>
               </div>
-              <span class="s-track-dur">2:45</span>
-            </div>
-
-            <div class="s-track">
-              <div class="s-track-btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg></div>
-              <div class="s-track-meta">
-                <strong>Help!</strong>
-                <span>The Beatles (1965) &bull; Live Record</span>
-              </div>
-              <span class="s-track-dur">2:20</span>
-            </div>
-
-            <div class="s-track">
-              <div class="s-track-btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg></div>
-              <div class="s-track-meta">
-                <strong>Hey Jude</strong>
-                <span>The Beatles (1968) &bull; Live Record</span>
-              </div>
-              <span class="s-track-dur">4:15</span>
+              <audio src="mp3/Twist_And_Shout.mp3" preload="none"></audio>
             </div>
           </div>
 
@@ -392,47 +395,94 @@
         <p class="section-subtitle">Originální vybavení 60. let a živá atmosféra</p>
       </div>
 
-      <div class="arena-gallery-grid">
-        <div class="gal-cell gal-wide">
-          <img src="images/IMG_4285.JPG" alt="Kapela na koncertě" loading="lazy">
+      <div class="gallery-grid">
+        <!-- Row 1: Živá atmosféra & Celá scéna (Live Concert Atmosphere) -->
+        <div class="gallery-item" data-index="0" data-caption="Živá koncertní atmosféra — The Glass Onion">
+          <img src="images/gallery/IMG_4285.JPG" alt="The Glass Onion na podiu" loading="lazy">
           <div class="gal-hover-info">
             <h4>Live Concert Atmosphere</h4>
             <span>KD Musilova, Brno</span>
           </div>
         </div>
-        <div class="gal-cell">
-          <img src="images/basa.jpg" alt="Epiphone Viola Bass" loading="lazy">
+        <div class="gallery-item" data-index="1" data-caption="Sgt. Pepper scéna s dekoracemi">
+          <img src="images/gallery/IMG_4286.JPG" alt="Scéna s archou Sgt. Pepper" loading="lazy">
           <div class="gal-hover-info">
-            <h4>Epiphone Viola Bass</h4>
-            <span>Legendární McCartneyovský basový tón</span>
+            <h4>Sgt. Pepper Stage</h4>
+            <span>Živá show &amp; originální rekvizity</span>
           </div>
         </div>
-        <div class="gal-cell">
-          <img src="images/e-kytara1.jpg" alt="Epiphone Sheraton II" loading="lazy">
+        <div class="gallery-item" data-index="2" data-caption="Dynamická energie na podiu">
+          <img src="images/gallery/IMG_4156.JPG" alt="Kapela v plném nasazení" loading="lazy">
           <div class="gal-hover-info">
-            <h4>Epiphone Sheraton II</h4>
-            <span>Vintage semi-akustický zvuk</span>
+            <h4>Plné pódiové nasazení</h4>
+            <span>Autentický zvuk i projev</span>
           </div>
         </div>
-        <div class="gal-cell">
-          <img src="images/bici.jpg" alt="Pearl Forum bicí souprava" loading="lazy">
+        <div class="gallery-item" data-index="3" data-caption="Kytarová sekce v akci">
+          <img src="images/gallery/IMG_4165.JPG" alt="Kytary a klávesy na podiu" loading="lazy">
           <div class="gal-hover-info">
-            <h4>Bicí souprava</h4>
-            <span>Ringo beat &amp; rytmika</span>
+            <h4>Kytary &amp; Vokály</h4>
+            <span>Koncertní energie</span>
           </div>
         </div>
-        <div class="gal-cell">
-          <img src="images/e-kytara2.jpg" alt="Epiphone Casino" loading="lazy">
+
+        <!-- Row 2: Sgt. Pepper uniformy & Členové kapely -->
+        <div class="gallery-item" data-index="4" data-caption="Jakub (sólová kytara, zpěv) — Sgt. Pepper uniforma">
+          <img src="images/gallery/IMG_4190.JPG" alt="Jakub v červené uniformě Sgt. Pepper" loading="lazy">
           <div class="gal-hover-info">
-            <h4>Epiphone Casino</h4>
-            <span>Lennonovský kytarový zvuk</span>
+            <h4>Jakub — Sólo kytara &amp; Zpěv</h4>
+            <span>Sgt. Pepper kostým</span>
           </div>
         </div>
-        <div class="gal-cell">
-          <img src="images/hist01.jpg" alt="Kapela v archivech" loading="lazy">
+        <div class="gallery-item" data-index="5" data-caption="Martin (kytara, zpěv) — Sgt. Pepper uniforma">
+          <img src="images/gallery/IMG_4149.JPG" alt="Martin v zelené uniformě Sgt. Pepper" loading="lazy">
           <div class="gal-hover-info">
-            <h4>Archiv od roku 1993</h4>
-            <span>Více než 30 let tradice</span>
+            <h4>Martin — Kytara &amp; Zpěv</h4>
+            <span>Sgt. Pepper kostým</span>
+          </div>
+        </div>
+        <div class="gallery-item" data-index="6" data-caption="Radim (baskytara, zpěv) — Sgt. Pepper uniforma">
+          <img src="images/gallery/IMG_4213.JPG" alt="Radim v modré uniformě Sgt. Pepper" loading="lazy">
+          <div class="gal-hover-info">
+            <h4>Radim — Baskytara &amp; Zpěv</h4>
+            <span>Sgt. Pepper kostým</span>
+          </div>
+        </div>
+        <div class="gallery-item" data-index="7" data-caption="Pavel (bicí, zpěv) — Sgt. Pepper uniforma">
+          <img src="images/gallery/IMG_4206.JPG" alt="Pavel v červené uniformě Sgt. Pepper" loading="lazy">
+          <div class="gal-hover-info">
+            <h4>Pavel — Bicí &amp; Zpěv</h4>
+            <span>Sgt. Pepper kostým</span>
+          </div>
+        </div>
+
+        <!-- Row 3: Klasické černé obleky 1962 & Koncertní detaily -->
+        <div class="gallery-item" data-index="8" data-caption="Jakub — Zpěv a klasický Beatle oblek 1962">
+          <img src="images/gallery/IMG_4126.JPG" alt="Jakub u mikrofonu v černém obleku" loading="lazy">
+          <div class="gal-hover-info">
+            <h4>Jakub — Beatlemania 1962</h4>
+            <span>Autentické černé obleky</span>
+          </div>
+        </div>
+        <div class="gallery-item" data-index="9" data-caption="Martin — Kytarové sólo v klasickém stylu">
+          <img src="images/gallery/IMG_4125.JPG" alt="Martin při kytarovém sólu" loading="lazy">
+          <div class="gal-hover-info">
+            <h4>Martin — Kytarové sólo</h4>
+            <span>Beatlemania éra</span>
+          </div>
+        </div>
+        <div class="gallery-item" data-index="10" data-caption="Pavel — Ringo beat a bicí">
+          <img src="images/gallery/IMG_4124.JPG" alt="Pavel za bicí soupravou" loading="lazy">
+          <div class="gal-hover-info">
+            <h4>Pavel — Ringo beat</h4>
+            <span>Rytmika a vokály</span>
+          </div>
+        </div>
+        <div class="gallery-item" data-index="11" data-caption="Pódiová energie a vášeň pro hudbu The Beatles">
+          <img src="images/gallery/IMG_4194.JPG" alt="Bicí sólo a energie na pódiu" loading="lazy">
+          <div class="gal-hover-info">
+            <h4>Pódiová energie</h4>
+            <span>Radost z živého hraní</span>
           </div>
         </div>
       </div>
@@ -444,24 +494,35 @@
     <div class="container">
       <div class="booking-card-wrapper">
         <div class="booking-cta-content">
-          <div class="section-tag">BOOKING &amp; MANAGEMENT</div>
           <h2 class="booking-title">Objednejte The Glass Onion na vaši akci</h2>
           <p class="booking-desc">
-            Vhodné pro hudební festivaly, městské a pivní slavnosti, divadelní a kulturní sály, firemní plesy i privátní VIP oslavy.
+            V případě zájmu o vystoupení kapely kontaktujte prosím Jakuba. Podrobnější informace o podmínkách naleznete níže.
           </p>
 
           <div class="booking-specs">
             <div class="spec-row">
               <span class="spec-icon">✔</span>
-              <span><strong>Délka vystoupení:</strong> do 120 minut čistého hraní (lze rozdělit do bloků)</span>
+              <span><strong>Délka vystoupení:</strong> Standardní délka vystoupení je do 2 hodin čistého času hraní, bloky dle požadavků pořadatele (krátké vstupy v kombinovaných pořadech až celovečerní akce), delší vystoupení dle domluvy.</span>
             </div>
             <div class="spec-row">
               <span class="spec-icon">✔</span>
-              <span><strong>Technika:</strong> Vlastní PA aparatura pro sály do 600 osob + vlastní zvukař</span>
+              <span><strong>Repertoár:</strong> Výhradně skladby The Beatles ze všech období tvorby této skupiny, aktuálně cca 90 skladeb. V případě zájmu zašleme demo CD.</span>
             </div>
             <div class="spec-row">
               <span class="spec-icon">✔</span>
-              <span><strong>Požadavky:</strong> Pódium min. 5×4 m, přípojka 230V / 16A</span>
+              <span><strong>Technické vybavení:</strong> Skupina má kromě kompletní nástrojové aparatury i vlastního zvukaře s variabilním PA systémem vhodným k ozvučení jak malých, tak velkých sálů (cca 600 lidí). Po domluvě lze zajistit vybavení i pro ostatní programy (CD, mikroporty pro speakery atd.).</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-icon">✔</span>
+              <span><strong>Kostýmy:</strong> Klasické černé obleky vzor Beatles v roce 1962, nebo kopie „seržantovských" uniforem dle alba Sgt. Pepper's Lonely Hearts Club Band.</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-icon">✔</span>
+              <span><strong>Požadavky na vystoupení:</strong> Pro zajištění vystoupení požadujeme podium nebo odpovídající plochu o minimální velikosti 4×5 m. V případě kompletního zvukového zajištění vyžadujeme rovněž prostor pro zvukaře před pódiem a 2 stoly pod mixážní pult. Dále požadujeme dostatečnou přípojku el. proudu (nejlépe 380, ev. 220 V), zamykatelnou šatnu a min. 2 hod. před vystoupením možnost přípravy aparatury. Další požadavky budou upřesněny při domluvě akce.</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-icon">✔</span>
+              <span><strong>Honorář:</strong> Honorář za vystoupení se sjednává dohodou dle typu daného vystoupení.</span>
             </div>
           </div>
 
@@ -498,7 +559,7 @@
     <div class="container footer-flex">
       <div class="footer-left">
         <span class="f-brand">THE GLASS ONION</span>
-        <span class="f-sub">The Beatles Revival Band &bull; Brno, Czech Republic</span>
+        <span class="f-sub">The Beatles Tribute Band &bull; Brno, Czech Republic</span>
       </div>
 
       <div class="footer-socials">
@@ -518,26 +579,32 @@
     </div>
   </footer>
 
-  <script>
-    // Navigation scroll class
-    const navbar = document.getElementById('navbar');
-    window.addEventListener('scroll', () => {
-      navbar.classList.toggle('scrolled', window.scrollY > 60);
-    });
+  <!-- Lightbox Modal -->
+  <div class="lightbox" id="galleryLightbox" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Prohlížeč fotografií">
+    <div class="lightbox-overlay" data-action="close"></div>
+    <div class="lightbox-content">
+      <button type="button" class="lightbox-btn lightbox-close" data-action="close" aria-label="Zavřít galerii">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+      
+      <button type="button" class="lightbox-btn lightbox-prev" data-action="prev" aria-label="Předchozí fotografie">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+      </button>
 
-    // Mobile Toggle
-    const menuToggle = document.getElementById('menuToggle');
-    const navLinks = document.getElementById('navLinks');
-    menuToggle.addEventListener('click', () => {
-      navLinks.classList.toggle('open');
-      menuToggle.classList.toggle('open');
-    });
-    navLinks.querySelectorAll('a').forEach(a => {
-      a.addEventListener('click', () => {
-        navLinks.classList.remove('open');
-        menuToggle.classList.remove('open');
-      });
-    });
-  </script>
+      <div class="lightbox-media">
+        <img src="" alt="" class="lightbox-img" id="lightboxImg">
+        <div class="lightbox-caption-bar">
+          <div class="lightbox-caption" id="lightboxCaption"></div>
+          <div class="lightbox-counter" id="lightboxCounter">1 / 12</div>
+        </div>
+      </div>
+
+      <button type="button" class="lightbox-btn lightbox-next" data-action="next" aria-label="Další fotografie">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
