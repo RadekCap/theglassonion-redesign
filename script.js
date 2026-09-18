@@ -1,3 +1,24 @@
+// ===== Protected booking contact links =====
+// Keep the contact details out of the initial HTML so simple scrapers do not
+// collect them, while exposing normal readable and clickable links to people.
+(function initBookingContacts() {
+  const phoneLink = document.getElementById('booking-phone');
+  const emailLink = document.getElementById('booking-email');
+
+  if (!phoneLink || !emailLink) return;
+
+  const phoneParts = ['+420', '604', '518', '184'];
+  const phone = phoneParts.join(' ');
+  const emailParts = ['JakubHusty', 'seznam', 'cz'];
+  const email = `${emailParts[0]}@${emailParts[1]}.${emailParts[2]}`;
+
+  phoneLink.href = `tel:${phone.replace(/\s/g, '')}`;
+  phoneLink.querySelector('span').textContent = phone;
+
+  emailLink.href = `mailto:${email}`;
+  emailLink.querySelector('span').textContent = email;
+})();
+
 // ===== Navbar scroll effect =====
 const navbar = document.getElementById('navbar');
 
@@ -226,4 +247,3 @@ sTracks.forEach(track => {
     }
   });
 })();
-
