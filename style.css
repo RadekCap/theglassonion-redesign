@@ -617,6 +617,16 @@ img {
   border-bottom: 1px solid var(--color-border);
 }
 
+@media (min-width: 901px) {
+  #about {
+    padding-top: 5.5rem;
+  }
+
+  #booking {
+    padding-top: 4.5rem;
+  }
+}
+
 .section-head {
   margin-bottom: 3.5rem;
 }

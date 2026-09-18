@@ -44,3 +44,18 @@ test('hero layout stays within the viewport and matches its baseline', async ({ 
     maxDiffPixels: 250,
   });
 });
+
+test('desktop section positions match their responsive baselines', async ({ page }, testInfo) => {
+  test.skip(testInfo.project.name.startsWith('mobile-') || testInfo.project.name === 'tablet-768x1024', 'Desktop reference sections only');
+
+  for (const sectionId of ['about', 'booking']) {
+    await page.goto(`/#${sectionId}`, { waitUntil: 'networkidle' });
+    await page.evaluate(() => document.fonts.ready);
+    await expect(page.locator(`#${sectionId}`)).toHaveScreenshot(`${sectionId}.png`, {
+      animations: 'disabled',
+      caret: 'hide',
+      scale: 'css',
+      maxDiffPixels: 400,
+    });
+  }
+});
