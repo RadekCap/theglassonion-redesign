@@ -1805,6 +1805,10 @@ img {
 }
 
 @media (max-width: 520px) {
+  #shows {
+    padding-top: 2.5rem;
+  }
+
   .lineup-grid {
     grid-template-columns: 1fr;
   }
