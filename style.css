@@ -2001,7 +2001,7 @@ img {
 
   .hero-photo-bg {
     inset: 70px 0 0;
-    background-position: center 75%;
+    background-position: center 95%;
   }
 
   .hero-subtle-gradient {
@@ -2067,7 +2067,26 @@ img {
   }
 
   .section-head {
+    margin-top: -1.5rem;
     margin-bottom: 1rem;
+  }
+
+  #about .split-story {
+    margin-top: -1.5rem;
+  }
+
+  #about .primary-frame img {
+    height: 260px;
+  }
+
+  #about .secondary-frame {
+    bottom: -1rem;
+    right: -0.5rem;
+    width: 40%;
+  }
+
+  #about .secondary-frame img {
+    height: 120px;
   }
 
   #booking {
