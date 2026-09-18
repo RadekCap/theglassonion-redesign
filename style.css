@@ -1733,7 +1733,8 @@ img {
   }
 
   .hero-photo-bg {
-    background-position: center 48%;
+    background-size: auto 125%;
+    background-position: center 68%;
   }
 
   .hero-bottom-stage {
