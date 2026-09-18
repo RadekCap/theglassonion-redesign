@@ -1453,7 +1453,7 @@ img {
   background: radial-gradient(circle at top right, rgba(229, 185, 76, 0.15) 0%, var(--bg-card) 60%);
   border: 1px solid var(--color-border-gold);
   border-radius: var(--radius-lg);
-  padding: 4rem 3.5rem;
+  padding: 2rem 3.5rem 4rem;
   box-shadow: var(--shadow-stage);
 }
 
