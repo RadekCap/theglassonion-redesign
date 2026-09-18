@@ -2067,12 +2067,12 @@ img {
   }
 
   .section-head {
-    margin-top: -1.5rem;
+    margin-top: 0;
     margin-bottom: 1rem;
   }
 
   #about .split-story {
-    margin-top: -1.5rem;
+    margin-top: 0;
   }
 
   #about .primary-frame img {
