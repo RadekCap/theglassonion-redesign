@@ -2001,7 +2001,7 @@ img {
 
   .hero-photo-bg {
     inset: 70px 0 0;
-    background-position: center 55%;
+    background-position: center 75%;
   }
 
   .hero-subtle-gradient {
@@ -2063,15 +2063,15 @@ img {
   }
 
   .section {
-    padding: 2rem 0;
+    padding: 0 0 2rem;
   }
 
   .section-head {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
   }
 
   #booking {
-    padding-top: 1rem;
+    padding-top: 0;
   }
 
   #booking .booking-card-wrapper {
