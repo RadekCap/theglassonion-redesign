@@ -126,6 +126,20 @@ img {
 
 .nav-brand {
   display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.brand-icon {
+  display: block;
+  width: auto;
+  height: 52px;
+  object-fit: contain;
+  flex: 0 0 auto;
+}
+
+.brand-copy {
+  display: flex;
   flex-direction: column;
 }
 
@@ -1703,6 +1717,14 @@ img {
 }
 
 @media (max-width: 768px) {
+  .brand-icon {
+    height: 42px;
+  }
+
+  .brand-title {
+    font-size: 1.2rem;
+  }
+
   .hero.hero-dominated {
     min-height: 100svh;
     height: auto;
