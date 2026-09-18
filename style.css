@@ -273,7 +273,7 @@ img {
   position: relative;
   min-height: 680px;
   height: 100vh;
-  height: min(100svh, 920px);
+  height: 100svh;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
