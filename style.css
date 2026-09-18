@@ -848,6 +848,14 @@ img {
   line-height: 1;
 }
 
+.tour-weekday {
+  font-size: 0.7rem;
+  font-weight: 800;
+  color: var(--color-gold);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
 .tour-month {
   font-size: 0.75rem;
   font-weight: 800;
