@@ -1728,16 +1728,30 @@ img {
   .hero.hero-dominated {
     min-height: 100svh;
     height: auto;
-    padding-top: 100px;
+    padding-top: 84px;
     padding-bottom: 3rem;
+    display: block;
+    background: #070709;
   }
 
   .hero-photo-bg {
-    background-size: auto 125%;
-    background-position: center 84%;
+    position: relative;
+    inset: auto;
+    width: 100%;
+    height: 290px;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .hero-subtle-gradient {
+    top: 84px;
+    bottom: auto;
+    height: 290px;
+    background: linear-gradient(180deg, rgba(7, 7, 9, 0.12) 0%, rgba(7, 7, 9, 0.05) 55%, #070709 100%);
   }
 
   .hero-bottom-stage {
+    padding-top: 2rem;
     padding-bottom: 1.5rem;
   }
 
