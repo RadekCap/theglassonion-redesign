@@ -1853,3 +1853,46 @@ img {
     margin-bottom: 60px;
   }
 }
+
+@media (min-width: 901px) and (max-height: 850px) {
+  #lineup,
+  #media {
+    padding-top: 2.5rem;
+    padding-bottom: 3rem;
+  }
+
+  #lineup .section-head,
+  #media .section-head {
+    margin-bottom: 2rem;
+  }
+
+  #lineup .lineup-photo {
+    aspect-ratio: 5 / 4;
+  }
+
+  #lineup .lineup-details {
+    padding: 1rem;
+  }
+
+  #lineup .member-desc {
+    font-size: 0.75rem;
+    line-height: 1.35;
+  }
+
+  #media .audio-soundboard {
+    padding: 1.5rem;
+  }
+
+  #media .soundboard-header {
+    margin-bottom: 1rem;
+  }
+
+  #media .soundboard-tracks {
+    gap: 0.6rem;
+    margin-bottom: 1.25rem;
+  }
+
+  #media .s-track {
+    padding: 0.65rem 1rem;
+  }
+}

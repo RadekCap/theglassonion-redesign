@@ -48,7 +48,7 @@ test('hero layout stays within the viewport and matches its baseline', async ({ 
 test('desktop section positions match their responsive baselines', async ({ page }, testInfo) => {
   test.skip(testInfo.project.name.startsWith('mobile-') || testInfo.project.name === 'tablet-768x1024', 'Desktop reference sections only');
 
-  for (const sectionId of ['about', 'booking']) {
+  for (const sectionId of ['about', 'booking', 'lineup', 'media']) {
     await page.goto(`/#${sectionId}`, { waitUntil: 'networkidle' });
     await page.evaluate(() => document.fonts.ready);
     await expect(page.locator(`#${sectionId}`)).toHaveScreenshot(`${sectionId}.png`, {
