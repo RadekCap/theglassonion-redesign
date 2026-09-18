@@ -8,6 +8,7 @@ const viewports = [
   ['desktop-2560x1440', { width: 2560, height: 1440 }],
   ['mobile-390x844', { width: 390, height: 844, isMobile: true, hasTouch: true }],
   ['mobile-414x896', { width: 414, height: 896, isMobile: true, hasTouch: true }],
+  ['mobile-landscape-844x390', { width: 844, height: 390, isMobile: true, hasTouch: true }],
   ['tablet-768x1024', { width: 768, height: 1024, isMobile: true, hasTouch: true }],
 ];
 

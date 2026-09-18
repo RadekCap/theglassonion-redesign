@@ -1954,3 +1954,153 @@ img {
     padding: 0.5rem 0.85rem;
   }
 }
+
+@media (min-width: 769px) and (max-height: 600px) {
+  .navbar {
+    height: 70px;
+  }
+
+  .nav-wrapper {
+    max-width: none;
+    padding: 0 1rem;
+  }
+
+  .brand-icon {
+    height: 38px;
+  }
+
+  .brand-sub {
+    font-size: 0.5rem;
+  }
+
+  .brand-title {
+    font-size: 1rem;
+    white-space: nowrap;
+  }
+
+  .nav-links {
+    gap: 1rem;
+  }
+
+  .nav-links a:not(.btn-nav-book) {
+    font-size: 0.68rem;
+  }
+
+  .btn-nav-book {
+    max-width: 150px;
+    padding: 0.5rem 0.85rem;
+    font-size: 0.65rem;
+    text-align: center;
+  }
+
+  .hero.hero-dominated {
+    min-height: 0;
+    height: 100svh;
+    padding-top: 70px;
+  }
+
+  .hero-photo-bg {
+    inset: 70px 0 0;
+    background-position: center 55%;
+  }
+
+  .hero-subtle-gradient {
+    inset: 70px 0 0;
+  }
+
+  .hero-bottom-stage {
+    padding-bottom: 1rem;
+  }
+
+  .hero-stage-inner {
+    gap: 1rem;
+  }
+
+  .hero-live-tag {
+    margin-bottom: 0.4rem;
+    padding: 0.25rem 0.65rem;
+    font-size: 0.6rem;
+  }
+
+  .hero-giant-title {
+    font-size: clamp(2rem, 5vw, 3rem);
+  }
+
+  .hero-pure-subtitle {
+    font-size: 0.8rem;
+  }
+
+  .hero-stage-ctas {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .hero-stage-ctas .btn {
+    padding: 0.65rem 1rem;
+    font-size: 0.68rem;
+  }
+
+  .hero-socials {
+    gap: 0.35rem;
+    font-size: 0.6rem;
+  }
+
+  .hero-socials a {
+    width: 36px;
+    height: 36px;
+  }
+
+  .hero-socials a svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .scroll-down-btn {
+    bottom: 0.5rem;
+    width: 32px;
+    height: 32px;
+  }
+
+  .section {
+    padding: 2rem 0;
+  }
+
+  .section-head {
+    margin-bottom: 1.5rem;
+  }
+
+  #booking {
+    padding-top: 1rem;
+  }
+
+  #booking .booking-card-wrapper {
+    padding: 1rem 2rem 1.5rem;
+  }
+
+  .booking-title {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .booking-desc {
+    font-size: 0.85rem;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+  }
+
+  .booking-specs {
+    gap: 0.5rem;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1rem;
+  }
+
+  .spec-row {
+    font-size: 0.75rem;
+  }
+
+  .contact-direct {
+    gap: 1rem;
+    padding-top: 1rem;
+  }
+}
