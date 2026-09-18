@@ -271,8 +271,9 @@ img {
 /* ===== Hero (Pure Photo Dominance) ===== */
 .hero.hero-dominated {
   position: relative;
-  min-height: 100vh;
+  min-height: 680px;
   height: 100vh;
+  height: min(100svh, 920px);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -284,11 +285,10 @@ img {
   position: absolute;
   inset: 0;
   background-image: url('images/IMG_4285.JPG');
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center 100%;
+  background-position: center 55%;
   filter: brightness(0.92) contrast(1.1);
-  transform: scale(1.12);
-  transform-origin: center bottom;
   z-index: 1;
 }
 
@@ -309,7 +309,7 @@ img {
   position: relative;
   z-index: 3;
   width: 100%;
-  padding-bottom: 4.5rem;
+  padding-bottom: clamp(2.5rem, 6vh, 4.5rem);
 }
 
 .hero-stage-inner {
@@ -1694,10 +1694,14 @@ img {
 
 @media (max-width: 768px) {
   .hero.hero-dominated {
-    min-height: 100vh;
+    min-height: 100svh;
     height: auto;
     padding-top: 100px;
     padding-bottom: 3rem;
+  }
+
+  .hero-photo-bg {
+    background-position: center 48%;
   }
 
   .hero-bottom-stage {
