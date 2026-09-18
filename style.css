@@ -1855,10 +1855,12 @@ img {
     padding-top: 2.5rem;
   }
 
+  #about,
+  #lineup,
   #media,
   #gallery,
   #booking {
-    padding-top: 2.5rem;
+    padding-top: 2rem;
   }
 
   .lineup-grid {
